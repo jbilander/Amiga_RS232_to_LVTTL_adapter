@@ -1,0 +1,77 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 950  950  0    50   Input ~ 0
+VCC
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60573639
+P 950 950
+F 0 "#FLG0101" H 950 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 1123 50  0000 C CNN
+F 2 "" H 950 950 50  0001 C CNN
+F 3 "~" H 950 950 50  0001 C CNN
+	1    950  950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 60574A8A
+P 950 950
+F 0 "#PWR0101" H 950 800 50  0001 C CNN
+F 1 "+5V" H 965 1123 50  0000 C CNN
+F 2 "" H 950 950 50  0001 C CNN
+F 3 "" H 950 950 50  0001 C CNN
+	1    950  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 605766E0
+P 1300 950
+F 0 "#FLG0102" H 1300 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 1123 50  0000 C CNN
+F 2 "" H 1300 950 50  0001 C CNN
+F 3 "~" H 1300 950 50  0001 C CNN
+	1    1300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60576DC0
+P 1300 950
+F 0 "#PWR0102" H 1300 700 50  0001 C CNN
+F 1 "GND" H 1305 777 50  0000 C CNN
+F 2 "" H 1300 950 50  0001 C CNN
+F 3 "" H 1300 950 50  0001 C CNN
+	1    1300 950 
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 950  0    50   Input ~ 0
+GND
+$Comp
+L Connector:DB25_Female J1
+U 1 1 6426BBDB
+P 3250 2750
+F 0 "J1" H 3430 2796 50  0000 L CNN
+F 1 "DB25_Female" H 3430 2705 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-25_Female_EdgeMount_P2.77mm" H 3250 2750 50  0001 C CNN
+F 3 " ~" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 2750 0    50   Input ~ 0
+GND
+$EndSCHEMATC

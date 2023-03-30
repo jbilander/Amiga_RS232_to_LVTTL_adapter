@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RS232_to_LVTTL)(type KiCad)(uri ${KIPRJMOD}/RS232_to_LVTTL.pretty)(options "")(descr ""))
+)
