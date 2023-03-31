@@ -288,4 +288,77 @@ Text GLabel 3200 5200 1    50   Input ~ 0
 RX_MCU
 Text GLabel 3300 5200 1    50   Input ~ 0
 GND
+$Comp
+L Device:C_Small C7
+U 1 1 642A667C
+P 6200 4100
+F 0 "C7" V 6292 4146 50  0000 L CNN
+F 1 "100nF" V 6300 3850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6200 4100 50  0001 C CNN
+F 3 "~" H 6200 4100 50  0001 C CNN
+	1    6200 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3600 4300 3600
+Wire Wire Line
+	4300 3600 4300 3650
+Wire Wire Line
+	4400 3900 4300 3900
+Wire Wire Line
+	4300 3900 4300 3850
+Wire Wire Line
+	6000 3600 6100 3600
+Wire Wire Line
+	6100 3600 6100 3650
+Wire Wire Line
+	6000 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 3850
+$Comp
+L Device:C_Small C8
+U 1 1 642AFA1A
+P 6200 4400
+F 0 "C8" V 6292 4446 50  0000 L CNN
+F 1 "100nF" V 6300 4150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6200 4400 50  0001 C CNN
+F 3 "~" H 6200 4400 50  0001 C CNN
+	1    6200 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 642A7281
+P 4300 3750
+F 0 "C5" H 4450 3750 50  0000 L CNN
+F 1 "100nF" H 4400 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 3750 50  0001 C CNN
+F 3 "~" H 4300 3750 50  0001 C CNN
+	1    4300 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 642AA23A
+P 6100 3750
+F 0 "C6" H 5850 3750 50  0000 L CNN
+F 1 "100nF" H 5750 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6100 3750 50  0001 C CNN
+F 3 "~" H 6100 3750 50  0001 C CNN
+	1    6100 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 4100 6100 4100
+Wire Wire Line
+	6300 4100 6550 4100
+Wire Wire Line
+	6550 4100 6550 3300
+Wire Wire Line
+	6550 3300 5200 3300
+Connection ~ 5200 3300
+Wire Wire Line
+	6000 4400 6100 4400
+Text GLabel 6300 4400 2    50   Input ~ 0
+GND
 $EndSCHEMATC
