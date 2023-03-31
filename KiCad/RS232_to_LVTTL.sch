@@ -267,4 +267,25 @@ Text GLabel 4400 5200 0    50   Output ~ 0
 CTS_MCU
 Text GLabel 5200 5700 3    50   Input ~ 0
 GND
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 6429DBB7
+P 3100 5400
+F 0 "J2" V 2972 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 3063 5680 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3100 5400 50  0001 C CNN
+F 3 "~" H 3100 5400 50  0001 C CNN
+	1    3100 5400
+	0    1    1    0   
+$EndComp
+Text GLabel 2900 5200 1    50   Input ~ 0
+CTS_MCU
+Text GLabel 3000 5200 1    50   Output ~ 0
+RTS_MCU
+Text GLabel 3100 5200 1    50   Output ~ 0
+TX_MCU
+Text GLabel 3200 5200 1    50   Input ~ 0
+RX_MCU
+Text GLabel 3300 5200 1    50   Input ~ 0
+GND
 $EndSCHEMATC
