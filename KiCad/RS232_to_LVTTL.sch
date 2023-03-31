@@ -64,15 +64,15 @@ GND
 $Comp
 L Connector:DB25_Female J1
 U 1 1 6426BBDB
-P 3250 2750
-F 0 "J1" H 3430 2796 50  0000 L CNN
-F 1 "DB25_Female" H 3430 2705 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-25_Female_EdgeMount_P2.77mm" H 3250 2750 50  0001 C CNN
-F 3 " ~" H 3250 2750 50  0001 C CNN
-	1    3250 2750
+P 3050 3150
+F 0 "J1" H 3230 3196 50  0000 L CNN
+F 1 "DB25_Female" H 3230 3105 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-25_Female_EdgeMount_P2.77mm" H 3050 3150 50  0001 C CNN
+F 3 " ~" H 3050 3150 50  0001 C CNN
+	1    3050 3150
 	1    0    0    -1  
 $EndComp
-Text GLabel 2950 2750 0    50   Input ~ 0
+Text GLabel 2750 3150 0    50   Input ~ 0
 GND
 $Comp
 L Regulator_Switching:TPS54308 U1
@@ -85,7 +85,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps54308.pdf" H 4900 2050 50  0001 C CNN
 	1    5200 1700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2950 3150 0    50   Output ~ 0
+Text GLabel 2750 3550 0    50   Output ~ 0
 12V
 Text GLabel 4050 1600 0    50   Input ~ 0
 12V
@@ -159,13 +159,13 @@ Wire Wire Line
 	5900 1400 5950 1400
 Wire Wire Line
 	5950 1400 5950 1700
-Text GLabel 2950 1750 0    50   Output ~ 0
-TXD
-Text GLabel 2950 1950 0    50   Input ~ 0
-RXD
-Text GLabel 2950 2150 0    50   Output ~ 0
+Text GLabel 2750 2150 0    50   Output ~ 0
+TX
+Text GLabel 2750 2350 0    50   Input ~ 0
+RX
+Text GLabel 2750 2550 0    50   Output ~ 0
 RTS
-Text GLabel 2950 2350 0    50   Input ~ 0
+Text GLabel 2750 2750 0    50   Input ~ 0
 CTS
 $Comp
 L Device:L_Small L1
@@ -221,4 +221,50 @@ Text GLabel 7350 1700 2    50   Output ~ 0
 Wire Wire Line
 	7000 1700 7350 1700
 Connection ~ 7000 1700
+$Comp
+L Interface_UART:MAX3232 U2
+U 1 1 64282C45
+P 5200 4500
+F 0 "U2" H 5200 5881 50  0000 C CNN
+F 1 "MAX3232" H 5200 5790 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5250 3450 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 5200 4600 50  0001 C CNN
+	1    5200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 6428B97E
+P 4500 3300
+F 0 "C4" V 4592 3346 50  0000 L CNN
+F 1 "100nF" V 4600 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4500 3300 50  0001 C CNN
+F 3 "~" H 4500 3300 50  0001 C CNN
+	1    4500 3300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4900 3300 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	4600 3300 5200 3300
+Text GLabel 4400 3300 0    50   Input ~ 0
+GND
+Text GLabel 6000 4600 2    50   Output ~ 0
+RX
+Text GLabel 6000 5000 2    50   Input ~ 0
+TX
+Text GLabel 6000 5200 2    50   Input ~ 0
+RTS
+Text GLabel 6000 4800 2    50   Output ~ 0
+CTS
+Text GLabel 4400 4600 0    50   Input ~ 0
+TX_MCU
+Text GLabel 4400 5000 0    50   Output ~ 0
+RX_MCU
+Text GLabel 4400 4800 0    50   Input ~ 0
+RTS_MCU
+Text GLabel 4400 5200 0    50   Output ~ 0
+CTS_MCU
+Text GLabel 5200 5700 3    50   Input ~ 0
+GND
 $EndSCHEMATC
