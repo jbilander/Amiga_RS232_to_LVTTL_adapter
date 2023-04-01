@@ -427,4 +427,37 @@ Wire Wire Line
 	5700 3300 6050 3300
 Wire Wire Line
 	4900 3300 5700 3300
+$Comp
+L Device:LED D3
+U 1 1 64373985
+P 3900 4250
+F 0 "D3" V 3939 4133 50  0000 R CNN
+F 1 "LED" V 3848 4133 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 4250 50  0001 C CNN
+F 3 "~" H 3900 4250 50  0001 C CNN
+	1    3900 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 64374459
+P 3900 3900
+F 0 "R5" H 3959 3946 50  0000 L CNN
+F 1 "1k" H 3959 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 3900 50  0001 C CNN
+F 3 "~" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3800 3900 3300
+Connection ~ 4400 3300
+Wire Wire Line
+	3900 4100 3900 4000
+Text GLabel 3900 4600 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3900 4600 3900 4400
+Wire Wire Line
+	3900 3300 4400 3300
 $EndSCHEMATC
