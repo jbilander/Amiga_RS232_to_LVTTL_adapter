@@ -452,9 +452,9 @@ Wire Wire Line
 	3900 4600 3900 4400
 Wire Wire Line
 	3900 3300 4400 3300
-Text GLabel 3350 5100 3    50   Output ~ 0
+Text GLabel 3350 5100 3    50   Input ~ 0
 RTS_MCU
-Text GLabel 3450 5100 3    50   Input ~ 0
+Text GLabel 3450 5100 3    50   Output ~ 0
 CTS_MCU
 Text GLabel 3150 5100 3    50   Output ~ 0
 RX_MCU
