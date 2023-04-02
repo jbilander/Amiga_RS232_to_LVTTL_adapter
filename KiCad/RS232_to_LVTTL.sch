@@ -276,14 +276,6 @@ F 3 "~" H 3250 4900 50  0001 C CNN
 	1    3250 4900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3450 5100 3    50   Input ~ 0
-CTS_MCU
-Text GLabel 3350 5100 3    50   Output ~ 0
-RTS_MCU
-Text GLabel 3250 5100 3    50   Output ~ 0
-TX_MCU
-Text GLabel 3150 5100 3    50   Input ~ 0
-RX_MCU
 Text GLabel 3050 5100 3    50   Input ~ 0
 GND
 $Comp
@@ -460,4 +452,12 @@ Wire Wire Line
 	3900 4600 3900 4400
 Wire Wire Line
 	3900 3300 4400 3300
+Text GLabel 3350 5100 3    50   Output ~ 0
+RTS_MCU
+Text GLabel 3450 5100 3    50   Input ~ 0
+CTS_MCU
+Text GLabel 3150 5100 3    50   Output ~ 0
+RX_MCU
+Text GLabel 3250 5100 3    50   Input ~ 0
+TX_MCU
 $EndSCHEMATC
