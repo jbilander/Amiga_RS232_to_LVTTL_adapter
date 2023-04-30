@@ -3,7 +3,8 @@
 Amiga RS232 to LVTTL with 3.3V Power converted and taken directly from the DB25 serial port 12V-pin (pin 9)
 
 ***
-WORK IN PROGRESS, NOT TESTED/VERIFIED WORKING YET!!!
+VERIFIED WORKING!!!<br />
+https://drive.google.com/file/d/105Ov4MyicygtOqv-1FFOkmMn0a-dk8-Z/view?usp=sharing
 ***
 
 Revision 1A
@@ -17,6 +18,17 @@ Revision 1A
 <br />
 <a href="images/RS232_to_LVTTL_rev1a_pic3.png">
 <img src="images/RS232_to_LVTTL_rev1a_pic3.png" width="605" height="426">
+</a>
+<br />
+<a href="images/RS232_to_LVTTL_rev1a_pic4.jpg">
+<img src="images/RS232_to_LVTTL_rev1a_pic4.jpg" width="300" height="225">
+</a>
+<a href="images/RS232_to_LVTTL_rev1a_pic5.jpg">
+<img src="images/RS232_to_LVTTL_rev1a_pic5.jpg" width="300" height="225">
+</a>
+<br />
+<a href="images/RS232_to_LVTTL_rev1a_pic6.jpg">
+<img src="images/RS232_to_LVTTL_rev1a_pic6.jpg" width="605" height="453">
 </a>
 
 BOM Rev. 1A
